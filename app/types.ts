@@ -11,8 +11,6 @@ export type FlowerOnCard = {
  *
  * This is the object that will be encoded and stored in the URL when sharing a card design.
  */
-export type CardDetails = {
-  flowers: FlowerOnCard[];
-  text: string;
-  greeneryImg: string;
-};
+// export type CardDetails = {
+//   flowers: FlowerOnCard[];
+// };

@@ -5,7 +5,7 @@ interface Props {
 
 export function FlowerCard(prop: Props) {
   return (
-    <div className="flex flex-col w-full h-30 items-center justify center">
+    <div className="flex flex-col w-full h-30 items-center justify-center">
       <img
         src={prop.image}
         className="max-h-full w-auto object-contain cursor-pointer"

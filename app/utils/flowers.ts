@@ -10,20 +10,20 @@ import Tulip from "~/asset/tulip.png";
 export type Flower = {
   id: number;
   name: string;
-  img: string;
+  image: string;
 };
 
 export const flowers: Flower[] = [
-  { id: 1, name: "Carnation", img: Carnation },
-  { id: 2, name: "Daisy", img: Daisy },
-  { id: 3, name: "Hydrangea", img: Hydrangea },
-  { id: 4, name: "Lily", img: Lily },
-  { id: 5, name: "Orchid", img: Orchid },
-  { id: 6, name: "Peony", img: Peony },
-  { id: 7, name: "Rose", img: Rose },
-  { id: 8, name: "Tulip", img: Tulip },
+  { id: 1, name: "Carnation", image: Carnation },
+  { id: 2, name: "Daisy", image: Daisy },
+  { id: 3, name: "Hydrangea", image: Hydrangea },
+  { id: 4, name: "Lily", image: Lily },
+  { id: 5, name: "Orchid", image: Orchid },
+  { id: 6, name: "Peony", image: Peony },
+  { id: 7, name: "Rose", image: Rose },
+  { id: 8, name: "Tulip", image: Tulip },
 ];
 
-export function getFlowerImgById(id: number): string | undefined {
-  return flowers.find((flower) => flower.id === id)?.img;
+export function getFlowerImageById(id: number): string | undefined {
+  return flowers.find((flower) => flower.id === id)?.image;
 }
