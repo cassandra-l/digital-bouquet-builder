@@ -21,7 +21,7 @@ export function Home() {
         </p>
         <Link
           to="/atelier"
-          className="relative group uppercase text-[#8a7b6d] hover:text-[#2c2c2c] border border-[#f0e9e1] hover:border-[#2c2c2c] text-[9px] px-24 py-6 text-bold tracking-[0.6em] transition-colors duration-1000 cursor-pointer"
+          className="relative group uppercase text-[#8a7b6d] hover:text-[#2c2c2c] border border-[#dcd1c4] hover:border-[#2c2c2c] text-[9px] px-24 py-6 text-bold tracking-[0.6em] transition-colors duration-1000 cursor-pointer"
         >
           Enter Atelier
           <span className="absolute inset-0 w-0 bg-[#2c2c2c]/2 transition-all duration-1000 ease-out group-hover:w-full"></span>

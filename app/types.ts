@@ -1,4 +1,4 @@
-export type FlowerOnCard = {
+export type FlowerOnGreenery = {
   id: number;
   x: number;
   y: number;
