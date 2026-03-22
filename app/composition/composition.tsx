@@ -23,9 +23,9 @@ export function CompositionPage() {
 
   const BOUQUET_TEMPLATES = {
     2: [
-      // A beautiful diagonal spread
-      { x: 41.5, y: 36.5 }, // Top-Left
-      { x: 58.5, y: 53.5 }, // Bottom-Right
+      // diagonal spread
+      { x: 45, y: 36.5 }, // Top-Left
+      { x: 60, y: 53.5 }, // Bottom-Right
     ],
     3: [
       // An equilateral triangle
@@ -113,9 +113,9 @@ export function CompositionPage() {
       <BackButton to="/atelier" />
 
       <div className="flex flex-col items-center justify-center pt-8">
-        <div className="font-serif text-[#2d2926] text-5xl mb-6">
+        <h1 className="font-serif text-[#2d2926] text-5xl mb-6">
           Bouquet Arrangement
-        </div>
+        </h1>
         <div className="text-[#b2a69d] font-[Tenor_Sans] uppercase text-[10px] tracking-[0.6em] font-bold">
           Pick your greenery
         </div>
@@ -132,7 +132,7 @@ export function CompositionPage() {
 
           {/* THE STAGE: We give this a fixed height so the Swap button knows where the floor is */}
           <div className="relative w-full max-w-150 h-100 flex items-center justify-center">
-            {/* 1. THE GREENERY: We use object-cover to make it big and fill the space */}
+            {/* THE GREENERY */}
             <img
               src={selectedGreenery.image}
               className="absolute w-full h-full object-contain opacity-70 mix-blend-multiply pointer-events-none transition-all duration-500"
@@ -143,17 +143,17 @@ export function CompositionPage() {
               alt="greenery"
             />
 
-            {/* 2. THE FLOWERS: Stays on top */}
+            {/* THE FLOWERS */}
             <div className="absolute inset-0" style={{ zIndex: 10 }}>
               {arrangedFlowers.map((flower, index) => (
                 <img
-                  key={index} // THIS IS CRUCIAL for the animation
+                  key={index}
                   src={getFlowerImageById(flower.id)}
                   className="absolute w-32 transition-all duration-1000 ease-in-out -translate-x-1/2 -translate-y-1/2"
                   style={{
                     left: `${flower.x}%`,
                     top: `${flower.y}%`,
-                    zIndex: 10 + Math.round(flower.y), // Optional: dynamic depth
+                    zIndex: 10 + Math.round(flower.y),
                   }}
                 />
               ))}

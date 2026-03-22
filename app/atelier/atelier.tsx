@@ -22,9 +22,9 @@ export function AtelierPage() {
       <BackButton to="/" />
 
       <div className="flex flex-col items-center justify-center pt-10">
-        <div className="font-serif text-[#2d2926] text-5xl mb-6">
+        <h1 className="font-serif text-[#2d2926] text-5xl mb-6">
           Choose your blooms
-        </div>
+        </h1>
         <div className="text-[#b2a69d] font-[Tenor_Sans] uppercase text-[10px] tracking-[0.6em] font-bold">
           Pick 2 to 4 stems
         </div>
